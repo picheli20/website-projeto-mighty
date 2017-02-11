@@ -1,0 +1,332 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>#MightyEterno</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <!-- build:css({.tmp/serve,src}) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- run `gulp inject` to automatically populate bower styles dependencies -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css({.tmp/serve,src}) styles/app.css -->
+    <!-- inject:css -->
+    <!-- css files will be automatically insert here -->
+    <!-- endinject -->
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="loader">
+      <img src="/assets/images/loader.gif">
+    </div>
+    <header>
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Mighty</a>
+          </div>
+
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">Início</a></li>
+              <li><a href="#">Médicos Sem Fronteira</a></li>
+              <li><a href="#">Apoiadores</a></li>
+              <li><a href="#">Doações</a></li>
+              <li><a href="#">História</a></li>
+              <li><a href="#">Videos</a></li>
+            </ul>
+        </div>
+      </nav>
+    </header>
+    <div id="header-video">
+      <div class="overlay"></div>
+      <video width="100%" autoplay muted loop onloadeddata="onVideoLoad()">
+        <source src="/assets/videos/intro.mp4" type="video/mp4">
+      </video>
+      <img src="assets/images/mighty.png">
+    </div>
+    <div class="banner">
+      <div class="container">
+        <h1>Combati o bom combate, acabei a carreira, guardei a fé… <i>2º Timóteo 4:7</i></h1>
+      </div>
+    </div>
+    <div class="videos">
+      <h1 class="text-center">Ultimos vídeos</h1>
+      <div class="video-loader">
+        <img src="/assets/images/loader.gif">
+      </div>
+      <div class="video-area clearfix">
+        <!-- the file videos.js will inject the iframes -->
+      </div>
+    </div>
+
+
+    <div class="main-container container">
+      <h1>
+        <span>Vamos ajudar alguém hoje?</span>
+      </h1>
+      <p class="text-center">Este site foi criado com o intuito de arrecadar fundos que serão doados aos Médicos Sem Fronteiras. A ideia surgiu após o falecimento do meu filho que era Youtuber (<a href="https://www.youtube.com/user/mightybeanz01" target="_blank">Mighty_01</a>), ele lutava contra um câncer mas infelizmente no dia 01/05/2015 perdeu a luta</p>
+      <p class="text-center">Pouco antes de falecer ele demonstrou grande vontade em doar mensalmente parte do dinheiro que o canal dele no YouTube (<a href="https://www.youtube.com/user/mightybeanz01" target="_blank">Mighty_01</a>) gera para os Médicos Sem Fronteira, infelizmente antes de poder fazer a primeira doação ele faleceu e por isso eu e minha esposa resolvemos doar integralmente a partir daquele dia todo o recurso gerado pelo canal dele.</p>
+      <p class="text-center">
+        <iframe width="90%" height="500" src="https://www.youtube.com/embed/ExLsYdCAI28" frameborder="0" allowfullscreen></iframe>
+      </p>
+      <p class="text-center">Agora com a ajuda de grandes Youtubers brasileiros queremos aumentar ainda mais o recurso doado e contamos com você para ajudar milhares de pessoas no Brasil e pelo mundo que precisam de nossa ajuda. Você pode doar quanto quiser e quando quiser e tenha certeza que por menor que seja sua doação ela ajudará em muito pessoas muito necessitadas.</p>
+      <div>
+        <img src="/assets/images/mighty1.jpg" class="col-xs-6">
+        <img src="/assets/images/mighty2.jpg" class="col-xs-6">
+      </div>
+      <p class="text-center">Se voce não pode doar diretamente, pode ajudar assistindo aos vídeos que serão postados no canal do <a href="https://www.youtube.com/user/mightybeanz01" target="_blank">Mighty</a> mensalmente pois toda a renda gerada será doada e os comprovantes serão colocados aqui neste site para dar transparência total ao destino do dinheiro.</p>
+
+      <h1>
+        <span>Médicos Sem Fronteira</span>
+      </h1>
+      <p class="text-center">Você não conhece os Médicos Sem Fronteira: <a href="http://www.msf.org.br/quem-somos" target="_blank">http://www.msf.org.br/quem-somos</a></p>
+      <p class="text-center">Médicos Sem Fronteiras (MSF) é uma organização humanitária internacional independente e comprometida em levar ajuda às pessoas que mais precisam sem discriminação de raça, religião ou convicções políticas.</p>
+      <p class="text-center">
+        <iframe width="90%" height="500" src="https://www.youtube.com/embed/5uFibHal3Mo" frameborder="0" allowfullscreen></iframe>
+      </p>
+      <p class="text-center">Se você quer fazer parte e ajudar os Médicos Sem Fronteira:</p>
+      <p class="text-center"><a href="https://www.msf.org.br/doacao-unica" class="btn btn-primary btn-lg">Doação Única</a> <a href="https://www.msf.org.br/doador-sem-fronteiras" class="btn btn-primary btn-lg">Doações mensais</a></p>
+      
+      <h1>
+        <span>Apoiadores</span>
+      </h1>
+      <p class="text-center">Canais que apoiam este projeto:</p>
+      <div class="text-center col-md-2 col-sm-3 col-xs-4 apoiadores">
+        <a href="https://www.youtube.com/user/coisadenerd" target="_blank" title="Coisa De Nerd">
+          <img src="/assets/images/apoiadores/1.jpg">
+          <h4>Coisa De Nerd</h4>
+        </a>
+      </div>
+      <div class="text-center col-md-2 col-sm-3 col-xs-4 apoiadores">
+        <a href="https://www.youtube.com/user/cadeachave" target="_blank" title="Cadê a Chave">
+          <img src="/assets/images/apoiadores/2.jpg">
+          <h4>Cadê a Chave</h4>
+        </a>
+      </div>
+      <div class="text-center col-md-2 col-sm-3 col-xs-4 apoiadores">
+        <a href="https://www.youtube.com/user/ControleDois" target="_blank" title="Controle Dois">
+          <img src="/assets/images/apoiadores/3.jpg">
+          <h4>Controle Dois</h4>
+        </a>
+      </div>
+      <div class="text-center col-md-2 col-sm-3 col-xs-4 apoiadores">
+        <a href="https://www.youtube.com/user/zigueira" target="_blank" title="Zigueira">
+          <img src="/assets/images/apoiadores/4.jpg">
+          <h4>Zigueira</h4>
+        </a>
+      </div>
+      <div class="text-center col-md-2 col-sm-3 col-xs-4 apoiadores">
+        <a href="https://www.youtube.com/user/SanInPlay" target="_blank" title="SanInPlay">
+          <img src="/assets/images/apoiadores/5.jpg">
+          <h4>SanInPlay</h4>
+        </a>
+      </div>
+      <div class="text-center col-md-2 col-sm-3 col-xs-4 apoiadores">
+        <a href="https://www.youtube.com/user/jhonnybenthin" target="_blank" title="JB Sniper">
+          <img src="/assets/images/apoiadores/6.png">
+          <h4>JB Sniper</h4>
+        </a>
+      </div>
+      <div class="text-center col-md-2 col-sm-3 col-xs-4 apoiadores">
+        <a href="https://www.youtube.com/user/battofildis" target="_blank" title="Battofildis">
+          <img src="/assets/images/apoiadores/7.jpg">
+          <h4>Battofildis</h4>
+        </a>
+      </div>
+      <div class="text-center col-md-2 col-sm-3 col-xs-4 apoiadores">
+        <a href="https://www.youtube.com/user/hempitbr" target="_blank" title="hempit">
+          <img src="/assets/images/apoiadores/8.jpg">
+          <h4>hempit</h4>
+        </a>
+      </div>
+      <div class="text-center col-md-2 col-sm-3 col-xs-4 apoiadores">
+        <a href="https://www.youtube.com/user/Sn4rFx" target="_blank" title="Sn4rFx">
+          <img src="/assets/images/apoiadores/9.png">
+          <h4>Sn4rFx</h4>
+        </a>
+      </div>
+      <div class="text-center col-md-2 col-sm-3 col-xs-4 apoiadores">
+        <a href="https://www.youtube.com/user/FoxHated" target="_blank" title="FoxHated">
+          <img src="/assets/images/apoiadores/10.jpg">
+          <h4>FoxHated</h4>
+        </a>
+      </div>
+      <div class="text-center col-md-2 col-sm-3 col-xs-4 apoiadores">
+        <a href="https://www.youtube.com/channel/UCJZuH147XxVHhO1xN4F6hpQ" target="_blank" title="Flávio Vacari">
+          <img src="/assets/images/apoiadores/11.png">
+          <h4>Flávio Vacari</h4>
+        </a>
+      </div>
+      <div class="text-center col-md-2 col-sm-3 col-xs-4 apoiadores">
+        <a href="https://www.youtube.com/user/meligeni2006" target="_blank" title="AndreMeligeniTV">
+          <img src="/assets/images/apoiadores/12.jpg">
+          <h4>AndreMeligeniTV</h4>
+        </a>
+      </div>
+      <div class="clearfix"></div>
+      
+      <h1>
+        <span>Doações</span>
+      </h1>
+      <p class="text-center">
+        <img src="/assets/images/logo-medicos-sem-fronteiras.png">
+      </p>
+      <p class="text-center">Código de doador nos MSF: <b>891732</b></p>
+
+      <table class="table table-bordered">
+        <tr>
+          <th></th>
+          <th class="text-center">2015</th>
+          <th class="text-center">2016</th>
+          <th class="text-center">2017</th>
+        </tr>
+        <tr>
+          <th class="text-right" width="200">Janeiro</th>
+          <td></td>
+          <td></td>
+          <td></td> 
+        </tr>
+        <tr>
+          <th class="text-right" width="200">Fevereiro</th>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th class="text-right" width="200">Março</th>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th class="text-right" width="200">Abril</th>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th class="text-right" width="200">Maio</th>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th class="text-right" width="200">Junho</th>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th class="text-right" width="200">Julho</th>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th class="text-right" width="200">Agosto</th>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th class="text-right" width="200">Setembro</th>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th class="text-right" width="200">Outubro</th>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th class="text-right" width="200">Novembro</th>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th class="text-right" width="200">Dezembro</th>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+
+      </table>
+
+      <h4 class="text-center">
+        <b>Toda a renda gerada pelo canal do Mighty é doada aos médicos sem fronteiras.</b>
+      </h4>
+      
+      <h1>
+        <span>História</span>
+      </h1>
+
+      <p class="text-center">As vezes nos perdemos em meio a tristeza por olharmos apenas para quem se foi e esquecemos de olhar para o legado deixado e que pode nos motivar e alegrar ou, pelo menos, nos confortar. Tivemos o privilégio de receber em nosso convívio familiar o Leonardo (Mighty) em 08 de fevereiro de 2000, um ano emblemático que trazia consigo uma série de expectativas. Na época falava-se no “bug do milênio”.</p>
+      <p class="text-center">A alegria foi imensa para todos nós e nossa satisfação só aumentava com o passar do tempo ao constatar quão especial era o Leozinho. Educado, inteligente e sobretudo, amoroso com os pais, avós e com toda a família e amável com os amigos.</p>
+      <p class="text-center">
+        <iframe width="90%" height="500" src="https://www.youtube.com/embed/OFlQjcv7fJc" frameborder="0" allowfullscreen></iframe>
+      </p>
+      <p class="text-center">Ainda pranteamos a recente partida do Mighty, aos quinze anos, dois meses e vinte e dois dias de idade. Depois de lutar bravamente contra a doença que o acometeu o nosso campeão parou de sofrer, justamente no dia 1º de maio de 2015, dia em que comemoramos o aniversário da morte de Ayrton Senna.</p>
+      <p class="text-center">Se no nosso horizonte o sol da alegria já não dava as caras há algum tempo, as nuvens ficaram mais carrancudas ainda escurecendo por completo o nosso céu convertendo-se numa chuva torrencial de lágrimas que derramamos.</p>
+      <p class="text-center">Muita coisa mudou em nossa família depois do dia 1° de maio de 2015 já que não temos mais a presença física daquele menino maravilhoso que nos contagiava com sua maneira tão peculiar de ser. Sentimos a impotência diante de uma doença tão nefasta e nos curvamos diante da soberania dos desígnios divinos.</p>
+      <p class="text-center">Mas nenhum temporal é eterno, e o sol timidamente foi retornando e conseguimos ver que o Leo foi tirado de nós fisicamente mas deixou a marca de um guerreiro e, sobretudo, de que abrigava em sua alma, uma fé inabalável em Deus, ainda que não entendesse as razões do sofrimento com aquela doença.</p>
+      <p class="text-center">Assisti alguns vídeos de Youtubers que reconheceram a maturidade do Leonardo apesar de seus 15 anos, a sua grandeza de nunca ter usado o seu canal no Youtube, ou mesmo nos papos íntimos, para reclamar da doença a ponto de alguém dizer que nem sabia que ele estava doente.</p>
+      <p class="text-center">
+        <img src="/assets/images/mighty3.jpg" style="max-width: 80%;">
+      </p>
+      <p class="text-center">Eu que nunca fui ligado ao mundo dos games, fui assistir aos vídeos postados pelo Leo em seu canal e pude perceber a alegria que ele tinha em interagir com seus admiradores fazendo o que mais gostava.</p>
+      <p class="text-center">
+        <iframe width="90%" height="500" src="https://www.youtube.com/embed/Vjt02QM8UhY" frameborder="0" allowfullscreen></iframe>
+      </p>
+      <p class="text-center">Ele que sempre usou seus recursos para ajudar pessoas menos afortunadas que ele e que sempre almejou ajudar os Médicos Sem Fronteiras, deixou essa preocupação imediata ao meu filho Anderson, ou seja, tornar realidade aquele sonho.</p>
+      <p class="text-center">
+        <img src="/assets/images/mighty4.jpg" style="max-width: 80%;">
+      </p>
+      <p class="text-center">Hoje, com mais de 200 mil inscritos no seu canal e com a ajuda de tanta gente boa, animada pela finalidade, essa ajuda está sendo possível. Sou agradecido a Deus por ter presenteado nossa família com o Leonardo que viveu 15 anos mas viveu intensamente. Escreveu um livro aos nove anos, realizou centenas de vídeos que foram vistos em vários países, criou amigos reais e virtuais, que pode estudar e começar a tocar violão em casa, na igreja. Suas realizações pessoais e seu comportamento diante da adversidade só me enchem de admiração cada dia mais a ponto de pedir a Deus que me faça ser alguém com a fibra do meu neto Leonardo Provazi de Souza que combateu o bom combate, acabou sua carreira e guardou a fé.</p>
+      <p class="text-center">
+        <iframe width="90%" height="500" src="https://www.youtube.com/embed/YJmmScEoPo8" frameborder="0" allowfullscreen></iframe>
+      </p>
+      <p class="text-center">Peço a todos que puderem engrossar a fileira de soldados em prol da causa abraçada pelo meu filho Anderson Roberto e com a parceria com outras pessoas que também vestiram a camisa do Mighty, que o façam, que multipliquem e que o ajudem a tornar realidade esse sonho.</p>
+      <p class="text-center">
+        <img src="/assets/images/mighty5.jpg" style="max-width: 80%;">
+      </p>
+      <p class="text-right">Obrigado.</p>
+      <p class="text-right">Carlos Roberto de Souza</p>
+      <p class="text-right">Avô do Mighty Eterno</p>
+    </div>
+    
+
+    <!-- build:js(src) scripts/vendor.js -->
+    <!-- bower:js -->
+    <!-- run `gulp inject` to automatically populate bower script dependencies -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js({.tmp/serve,.tmp/partials,src}) scripts/app.js -->
+    <!-- inject:js -->
+    <!-- js files will be automatically insert here -->
+    <!-- endinject -->
+
+    <!-- inject:partials -->
+    <!-- angular templates will be automatically converted in js and inserted here -->
+    <!-- endinject -->
+    <!-- endbuild -->
+
+  </body>
+</html>
